@@ -28,7 +28,7 @@ header {
 }
 
 .header__menu-link,
-.footer__menu-link{
+.footer__menu-link {
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
