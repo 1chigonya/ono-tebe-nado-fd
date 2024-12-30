@@ -34,6 +34,7 @@
 
 .header__links-list-item_no-bullit {
     padding-left: 0;
+    list-style: none;
 }
 
 /* Старое решение для отступов после буллетов
@@ -62,10 +63,6 @@
     width: 100%;
     justify-self: end;
     line-height: 135%;
-}
-
-.header__links-list-item_no-bullit {
-    list-style: none;
 }
 
 .cover {
