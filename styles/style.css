@@ -1,8 +1,4 @@
-body {
-    background-color: grey;
-}
-
-header {
+.header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
@@ -22,8 +18,7 @@ header {
     margin-bottom: 8px;
     }
 
-.header__menu-item_active .header__menu-link,
-.footer__menu-item_active .footer__menu-link {
+.link__active {
     text-decoration: none;
 }
 
@@ -33,9 +28,19 @@ header {
     text-underline-offset: 4px;
 }
 
+.header__menu-item {
+    padding-left: 6px;
+}
+
+.header__links-list-item_no-bullit {
+    padding-left: 0;
+}
+
+/* Старое решение для отступов после буллетов
 .with-bullet {
     padding-left: 6px;
 }
+*/
 
 .header__logo-image {
     width: 136px;
@@ -47,15 +52,16 @@ header {
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
     font-style: normal;
-    line-height: 24px;
+    line-height: 135%;
     margin-bottom: 8px;
 }
 
 .header__address {
     flex-direction: column;
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
     justify-self: end;
-    line-height: 24px;
+    line-height: 135%;
 }
 
 .header__links-list-item_no-bullit {
@@ -92,6 +98,7 @@ header {
 .aligned-text {
     display: block;
     line-height: 1.15;
+    text-transform: uppercase;
 }
 
 .aligned-text_center {
@@ -106,9 +113,11 @@ header {
     text-align: right;
 }
 
+/* Старое решение для Pixel Perfect
 .word-spacing {
     word-spacing: 18px;
 }
+*/
 
 .cover__description {
     display: grid;
@@ -268,7 +277,8 @@ header {
 
   .about__text {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 120%;
+    max-width: 688px;
   }
 
   .footer {
@@ -283,7 +293,7 @@ header {
   .footer__address {
     flex-direction: column;
     width: 264px;
-    line-height: 24px;
+    line-height: 135%;
 }
 
 .footer__menu-list,
